@@ -1,15 +1,24 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/GreenStore/company-logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="light dark">
-    <title>Green Store</title>
-    <script type="module" crossorigin src="/GreenStore/assets/index-CZbOxQIe.js"></script>
-    <link rel="stylesheet" crossorigin href="/GreenStore/assets/index-B6cl7Fj1.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <script>
+    if (location.search.startsWith("?/")) {
+      const newPath = redirect.slice(1);
+      history.replaceState(null, null, newPath);
+    }
+  </script>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/GreenStore/company-logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark">
+  <title>Green Store</title>
+  <script type="module" crossorigin src="/GreenStore/assets/index-CZbOxQIe.js"></script>
+  <link rel="stylesheet" crossorigin href="/GreenStore/assets/index-B6cl7Fj1.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
 </html>
