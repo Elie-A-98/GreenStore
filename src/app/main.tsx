@@ -8,8 +8,8 @@ async function startMsw() {
   const { worker } = await import("../api/msw/browser.ts");
   return worker.start({
     serviceWorker: {
-      url: `${import.meta.env.BASE_URL}mockServiceWorker.js`
-    }
+      url: `${import.meta.env.BASE_URL}mockServiceWorker.js`,
+    },
   });
 }
 
@@ -19,6 +19,6 @@ startMsw().then(() => {
       <BrowserRouter basename={import.meta.env.BASE_URL}>
         <App />
       </BrowserRouter>
-    </StrictMode>
+    </StrictMode>,
   );
 });
