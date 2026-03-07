@@ -18,4 +18,5 @@ export default defineConfig({
     react(),
     svgr(),
   ],
+  base: process.env.NODE_ENV === 'production' ? '/GreenStore/' : undefined
 });
